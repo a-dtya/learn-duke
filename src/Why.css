@@ -1,0 +1,49 @@
+.why-container {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+  }
+  
+  .why-left {
+    width: 50%;
+  }
+  
+  .why-left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .why-left ul {
+    margin-top: 50px;
+    list-style: none;
+  }
+  
+  .why-left ul li {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .why-left ul li::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #5169f6;
+    border-radius: 50%;
+  }
+  
+  .why-right {
+    width: 50%;
+  }
+  
+  .why-right img {
+    width: 85%;
+    height: 550px;
+    border-radius: 50%;
+  }
