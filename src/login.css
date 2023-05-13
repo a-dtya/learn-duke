@@ -1,0 +1,30 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: bisque;
+}
+.login-title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+}
+.login-title:hover{
+    color: crimson;
+    font-style: oblique;
+}
+.login-btn{
+    height: 40px;
+    width: 75px;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+.login-btn:hover{
+    background-color: crimson;
+    transform: scale(1.03);
+    font-style: oblique;
+
+}

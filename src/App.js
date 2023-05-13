@@ -5,6 +5,7 @@ import Hero from './Hero'
 import Navbar from './NavBar';
 import Community from './Community';
 import Why from './Why';
+import Login from './Login';
 import {Routes, Route} from 'react-router-dom'
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero/>
       <Community/>
       <Why/>
+      <Login/>
     </>
       
   );
