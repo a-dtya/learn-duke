@@ -25,7 +25,12 @@ const isLoggedIn = (req,res,next)=>{
     }
 }
 app.get('/good',isLoggedIn,(req,res)=>{
-    res.send({name:req.user.displayName,email:req.user.email})
+    res.send("./views/pages/profile.ejs",{name:req.user.displayName,email:req.user.email})
+})
+app.get("/logout",(req,res)=>{
+    req.session=null
+    req.logout()
+    res.redirect("/")
 })
 app.get("/google",passport.authenticate('google',{scope:['profile','email']}))    
 app.get("/google/callback",passport.authenticate('google',{failureRedirect: '/failed'}),function(req,res){
