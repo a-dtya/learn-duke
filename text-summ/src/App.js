@@ -10,7 +10,7 @@ function App() {
     {inputs:text},
     {
       headers:{
-        Authorization: 
+        Authorization: ""
       }
     }
     )
