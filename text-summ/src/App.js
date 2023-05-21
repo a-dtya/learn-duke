@@ -2,7 +2,7 @@
 import './App.css';
 import React,{useState} from 'react';
 import axios from 'axios';
-import env from 'react-dotenv';
+
 function App() {
   const [text,setText]  = useState("")
   const handleClick = async()=>{
@@ -10,10 +10,11 @@ function App() {
     {inputs:text},
     {
       headers:{
-        Authorization: ""
+        Authorization: `Bearer ${process.env.REACT_APP_URL}`
       }
     }
     )
+    console.log(response.data)
   }
   return (
     <div className="App">
