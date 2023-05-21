@@ -25,7 +25,7 @@ const isLoggedIn = (req,res,next)=>{
     }
 }
 app.get('/good',isLoggedIn,(req,res)=>{
-    res.send("./views/pages/profile.ejs",{name:req.user.displayName,email:req.user.email})
+    res.render("./pages/profile.ejs",{name:req.user.displayName,email:req.user.email})
 })
 app.get("/logout",(req,res)=>{
     req.session=null
