@@ -5,7 +5,8 @@ function App() {
   const [text,setText]  = useState("")
   return (
     <div className="App">
-      <textarea className="text-area" value={text} onChange={(e)=>setText(e.target.value)}></textarea>
+      <textarea className="text-area" value={text} onChange={(e)=>setText(e.target.value)} rows={10}
+      />
     </div>
   );
 }
